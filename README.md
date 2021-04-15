@@ -5,11 +5,11 @@ Home: https://github.com/executablebooks/sphinx-tabs
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-tabs-feedstock/blob/master/LICENSE.txt)
 
 Summary: Tabbed views for Sphinx
 
-
+Documentation: https://sphinx-tabs.readthedocs.io/
 
 Current build status
 ====================
