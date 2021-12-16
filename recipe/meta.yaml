@@ -21,7 +21,9 @@ requirements:
   run:
     - pygments
     - python >=3.6
-    - sphinx >=2,<4
+    - sphinx >=2,<5
+    - pygments
+    - docutils >=0.16.0
 
 test:
   imports:
@@ -38,3 +40,4 @@ about:
 extra:
   recipe-maintainers:
     - chrisjsewell
+    - danielfrg
