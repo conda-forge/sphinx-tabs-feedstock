@@ -1,11 +1,11 @@
-About sphinx-tabs
-=================
+About sphinx-tabs-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-tabs-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/executablebooks/sphinx-tabs
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-tabs-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tabbed views for Sphinx
 
@@ -146,5 +146,4 @@ Feedstock Maintainers
 =====================
 
 * [@chrisjsewell](https://github.com/chrisjsewell/)
-* [@danielfrg](https://github.com/danielfrg/)
 
