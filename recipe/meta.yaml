@@ -17,9 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - setuptools
+    - python {{ python_min }}
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - sphinx >=2
     - pygments
     - docutils >=0.18.0
@@ -27,6 +28,8 @@ requirements:
 test:
   imports:
     - sphinx_tabs
+  requires:
+    - python {{ python_min }}
 
 about:
   home: https://github.com/executablebooks/sphinx-tabs
