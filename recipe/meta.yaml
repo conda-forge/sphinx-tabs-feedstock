@@ -1,5 +1,5 @@
 {% set name = "sphinx-tabs" %}
-{% set version = "3.4.1" %}
+{% set version = "3.4.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d2a09f9e8316e400d57503f6df1c78005fdde220e5af589cc79d493159e1b832
+  sha256: 991ad4a424ff54119799ba1491701aa8130dd43509474aef45a81c42d889784d
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
