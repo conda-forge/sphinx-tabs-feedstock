@@ -1,25 +1,26 @@
 {% set name = "sphinx-tabs" %}
-{% set version = "3.4.1" %}
+{% set version = "3.4.7" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d2a09f9e8316e400d57503f6df1c78005fdde220e5af589cc79d493159e1b832
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 991ad4a424ff54119799ba1491701aa8130dd43509474aef45a81c42d889784d
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - setuptools
+    - python {{ python_min }}
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - sphinx >=2
     - pygments
     - docutils >=0.18.0
@@ -27,6 +28,8 @@ requirements:
 test:
   imports:
     - sphinx_tabs
+  requires:
+    - python {{ python_min }}
 
 about:
   home: https://github.com/executablebooks/sphinx-tabs
