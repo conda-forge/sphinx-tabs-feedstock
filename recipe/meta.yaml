@@ -1,5 +1,6 @@
 {% set name = "sphinx-tabs" %}
 {% set version = "3.5.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -17,14 +18,17 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.10
+    - python {{ python_min }}
+    - setuptools
   run:
-    - python >=3.10
+    - python {{ python_min }}
     - sphinx >=7
     - pygments
     - docutils >=0.18.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - sphinx_tabs
 
