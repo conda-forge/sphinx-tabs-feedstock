@@ -17,10 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.10
   run:
-    - python >=3.6
-    - sphinx >=2
+    - python >=3.10
+    - sphinx >=7
     - pygments
     - docutils >=0.18.0
 
