@@ -21,7 +21,7 @@ requirements:
     - python {{ python_min }}
     - setuptools
   run:
-    - python {{ python_min }}
+    - python >={{ python_min }}
     - sphinx >=7
     - pygments
     - docutils >=0.18.0
